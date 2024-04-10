@@ -41,6 +41,7 @@ namespace ConsoleApp1
             dataInfo newdataInfo = new dataInfo();
             Console.WriteLine("What is your name? ");
             newdataInfo.name = Console.ReadLine();
+            Console.WriteLine("----------------------");
 
             do
             {
@@ -52,22 +53,37 @@ namespace ConsoleApp1
                     test = false;
                 }
             } while (test == false); // Check user input for age
+            Console.WriteLine("----------------------");
+
             Console.WriteLine("What is your gender? ");
             newdataInfo.gender = ChooseOption(gender, nameGender);
+
             Console.WriteLine("What country are you from? ");
             newdataInfo.country = Console.ReadLine();
+            Console.WriteLine("----------------------");
+
             Console.WriteLine("What is your favorite color? ");
             newdataInfo.color = ChooseOption(color, nameColor);
+            
+
             Console.WriteLine("What is your hobby? ");
             newdataInfo.hobby = Console.ReadLine();
+            Console.WriteLine("----------------------");
+
             Console.WriteLine("What do you do? ");
             newdataInfo.job = Console.ReadLine();
+            Console.WriteLine("----------------------");
+
             Console.WriteLine("What is your favorite music genre? ");
             newdataInfo.music = ChooseOption(musicgen,namemusicgen);
+
             Console.WriteLine("What is your favorite book? ");
             newdataInfo.book = Console.ReadLine();
+            Console.WriteLine("----------------------");
+
             Console.WriteLine("What is your favorite movie? ");
             newdataInfo.movie = Console.ReadLine();
+            Console.WriteLine("----------------------");
 
             return newdataInfo;
         } 
@@ -97,6 +113,7 @@ namespace ConsoleApp1
                     case 2:
                         string chosenOption = ChooseFromList(list, listName);
                         Console.WriteLine($"Selected option: {chosenOption}");
+                        Console.WriteLine("----------------------");
                         return chosenOption;
                         
                     case 3:
@@ -221,6 +238,7 @@ namespace ConsoleApp1
                         Console.WriteLine($"Favorite Music: {data.music}");
                         Console.WriteLine($"Favorite Book: {data.book}");
                         Console.WriteLine($"Favorite Movie: {data.movie}");
+                        Console.WriteLine("----------------------");
                         found = true;
                     }
 
@@ -369,8 +387,11 @@ namespace ConsoleApp1
                     
 
                 }
-                if (sta_choice != 10) Console.WriteLine("Press Enter to continue...");
-                Console.ReadKey();
+                if (sta_choice != 10)
+                {
+                    Console.WriteLine("Press Enter to continue...");
+                    Console.ReadKey();
+                }
 
 
             } while (sta_choice != 10);
@@ -378,6 +399,12 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             int choice = 0;
+            Console.WriteLine("Filling out questionares");
+            dataInfo entry = MakeNewData();
+            WriteToFile(filePath, entry);
+            Console.WriteLine("Thank you!");
+            Console.WriteLine("Press Enter to continue...");
+            Console.ReadKey();
             do
             {
                 Console.Clear();
@@ -408,7 +435,7 @@ namespace ConsoleApp1
 
                 }
 
-            } while (choice != 4);
+            } while ( choice != 4);
             
 
             
