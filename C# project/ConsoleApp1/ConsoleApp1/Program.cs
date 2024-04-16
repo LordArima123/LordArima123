@@ -32,7 +32,7 @@ namespace ConsoleApp1
             public string music;
             public string book;
             public string movie;
-            
+
         }
 
         static dataInfo MakeNewData()
@@ -73,9 +73,9 @@ namespace ConsoleApp1
         }
         static string CheckEmpty(string value)
         {
-            while (value.trim().Length = 0)
+            while (value.Trim().Length == 0)
             {
-                Console.WriteLine("Do Not Leave Empty Answer!");
+                Console.WriteLine("Please Enter Your Answer!");
                 value = Console.ReadLine();
             }
             return value;
@@ -108,7 +108,7 @@ namespace ConsoleApp1
                         Console.WriteLine($"Selected option: {chosenOption}");
                         Console.WriteLine("----------------------");
                         return chosenOption;
-                        
+
                     case 3:
                         AddToList(list, listName);
                         break;
@@ -119,7 +119,7 @@ namespace ConsoleApp1
             }
         }
 
-        
+
 
         // Show option
         static void ShowList<T>(List<T> list, string listName)
@@ -151,7 +151,7 @@ namespace ConsoleApp1
 
             return list[choice - 1];
         }
-         
+
         //Function add new option
         static void AddToList<T>(List<T> list, string listName)
         {
@@ -164,7 +164,7 @@ namespace ConsoleApp1
         //Write to file function
         static void WriteToFile(string filePath, dataInfo data)
         {
-            
+
             // Convert data object to a string representation
             string dataString = $"{data.name}, {data.age}, {data.gender}, {data.country}, {data.color}, {data.hobby}, {data.job}, {data.music}, {data.book}, {data.movie}";
 
@@ -219,7 +219,7 @@ namespace ConsoleApp1
                         data.book = parts[8].Trim();
                         data.movie = parts[9].Trim();
                         // Create and return a Data instance
-                        
+
                         Console.WriteLine($"Found {searchText}");
                         Console.WriteLine($"Name: {data.name}");
                         Console.WriteLine($"Age: {data.age}");
@@ -236,7 +236,7 @@ namespace ConsoleApp1
                     }
 
                 }
-                if ( !found )
+                if (!found)
                 {
                     Console.WriteLine($"{searchText} Not Found");
                 }
@@ -255,7 +255,7 @@ namespace ConsoleApp1
                     string line;
                     while ((line = reader.ReadLine()) != null)
                     {
-                        string[] fields = line.Split(','); 
+                        string[] fields = line.Split(',');
 
                         dataInfo data = new dataInfo
                         {
@@ -377,7 +377,7 @@ namespace ConsoleApp1
                         string M = FindMostCommon(movies);
                         Console.WriteLine($"The most favorite color is: {M}");
                         break;
-                    
+
 
                 }
                 if (sta_choice != 10)
@@ -404,9 +404,9 @@ namespace ConsoleApp1
                 Console.WriteLine("Please choose option:");
                 Console.WriteLine("1 - Fill out questionares");
                 Console.WriteLine("2 - Finding answers of a person");
-                Console.WriteLine("3 - Statistic");     
+                Console.WriteLine("3 - Statistic");
                 Console.WriteLine("4 - Exit");
-                int.TryParse(Console.ReadLine(),out choice);
+                int.TryParse(Console.ReadLine(), out choice);
                 switch (choice)
                 {
                     case 1:
@@ -428,13 +428,13 @@ namespace ConsoleApp1
 
                 }
 
-            } while ( choice != 4);
-            
+            } while (choice != 4);
 
-            
-            
+
+
+
         }
     }
 }
-  
+
 

@@ -1,9 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\project\\LordArima123\\C# project\\ConsoleApp1\\",
+  "WorkspaceRootPath": "F:\\project\\Visual Studio\\ConsoleApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\project\\Visual Studio\\ConsoleApp1\\ConsoleApp1\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9786B7A9-20D3-41A0-AE24-C3578151A5B1}|ConsoleApp1\\ConsoleApp1.csproj|f:\\project\\visual studio\\consoleapp1\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9786B7A9-20D3-41A0-AE24-C3578151A5B1}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,12 +21,12 @@
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\project\\Visual Studio\\ConsoleApp1\\ConsoleApp1\\Program.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\Visual Studio\\ConsoleApp1\\ConsoleApp1\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Program.cs",
               "ToolTip": "F:\\project\\Visual Studio\\ConsoleApp1\\ConsoleApp1\\Program.cs",
-              "RelativeToolTip": "..\\..\\..\\Visual Studio\\ConsoleApp1\\ConsoleApp1\\Program.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAAAE8AAAAJAAAA",
+              "RelativeToolTip": "ConsoleApp1\\Program.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAowE0AAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T21:34:14.974Z",
+              "WhenOpened": "2024-02-14T22:05:16.507Z",
               "EditorCaption": ""
             }
           ]
