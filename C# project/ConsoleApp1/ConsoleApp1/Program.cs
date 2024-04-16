@@ -33,15 +33,14 @@ namespace ConsoleApp1
             public string book;
             public string movie;
             
-        } 
+        }
 
         static dataInfo MakeNewData()
         {
             bool test = false;
             dataInfo newdataInfo = new dataInfo();
             Console.WriteLine("What is your name? ");
-            newdataInfo.name = Console.ReadLine();
-            Console.WriteLine("----------------------");
+            newdataInfo.name = CheckEmpty(Console.ReadLine());
 
             do
             {
@@ -53,40 +52,34 @@ namespace ConsoleApp1
                     test = false;
                 }
             } while (test == false); // Check user input for age
-            Console.WriteLine("----------------------");
-
             Console.WriteLine("What is your gender? ");
             newdataInfo.gender = ChooseOption(gender, nameGender);
-
             Console.WriteLine("What country are you from? ");
-            newdataInfo.country = Console.ReadLine();
-            Console.WriteLine("----------------------");
-
+            newdataInfo.country = CheckEmpty(Console.ReadLine());
             Console.WriteLine("What is your favorite color? ");
             newdataInfo.color = ChooseOption(color, nameColor);
-            
-
             Console.WriteLine("What is your hobby? ");
-            newdataInfo.hobby = Console.ReadLine();
-            Console.WriteLine("----------------------");
-
+            newdataInfo.hobby = CheckEmpty(Console.ReadLine());
             Console.WriteLine("What do you do? ");
-            newdataInfo.job = Console.ReadLine();
-            Console.WriteLine("----------------------");
-
+            newdataInfo.job = CheckEmpty(Console.ReadLine());
             Console.WriteLine("What is your favorite music genre? ");
-            newdataInfo.music = ChooseOption(musicgen,namemusicgen);
-
+            newdataInfo.music = ChooseOption(musicgen, namemusicgen);
             Console.WriteLine("What is your favorite book? ");
-            newdataInfo.book = Console.ReadLine();
-            Console.WriteLine("----------------------");
-
+            newdataInfo.book = CheckEmpty(Console.ReadLine());
             Console.WriteLine("What is your favorite movie? ");
-            newdataInfo.movie = Console.ReadLine();
-            Console.WriteLine("----------------------");
+            newdataInfo.movie = CheckEmpty(Console.ReadLine());
 
             return newdataInfo;
-        } 
+        }
+        static string CheckEmpty(string value)
+        {
+            while (value.trim().Length = 0)
+            {
+                Console.WriteLine("Do Not Leave Empty Answer!");
+                value = Console.ReadLine();
+            }
+            return value;
+        }
 
         // Function to choose option
         static string ChooseOption(List<string> list, string listName)
