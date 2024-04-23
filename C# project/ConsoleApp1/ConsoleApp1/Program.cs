@@ -345,7 +345,7 @@ namespace ConsoleApp1
                 {
                     case 1: //Avarage Age
                         double res = CalculateAverageAge(dataList);
-                        Console.WriteLine($"Average Age entered is: {res}");
+                        Console.WriteLine($"Average Age entered is: {res:F2}");
                         break;
                     case 2: //Color
                         List<string> colors = dataList.Select(data => data.color).ToList();

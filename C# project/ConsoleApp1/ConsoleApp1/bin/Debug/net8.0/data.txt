@@ -1,0 +1,5 @@
+123, 15, Male, asd, Blue, fsd, fwer, Rap, qwe, qwe
+56, 16, Female, 16, Red, 123, 123, Rock, 2, 2
+12, 15, Female, 2, Green, 2, 2, Rock, 2, 2
+12, 15, Male, 12, Green, 2, 2, Rock, 2, 2
+2, 15, Female, 2, Green, 2, 2, Rock, 2, 2

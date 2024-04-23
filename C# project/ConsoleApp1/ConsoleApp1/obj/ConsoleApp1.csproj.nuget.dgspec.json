@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\project\\Visual Studio\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {}
+    "F:\\project\\LordArima123\\C# project\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {}
   },
   "projects": {
-    "F:\\project\\Visual Studio\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {
+    "F:\\project\\LordArima123\\C# project\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\project\\Visual Studio\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectUniqueName": "F:\\project\\LordArima123\\C# project\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
         "projectName": "ConsoleApp1",
-        "projectPath": "F:\\project\\Visual Studio\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectPath": "F:\\project\\LordArima123\\C# project\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
         "packagesPath": "C:\\Users\\phong\\.nuget\\packages\\",
-        "outputPath": "F:\\project\\Visual Studio\\ConsoleApp1\\ConsoleApp1\\obj\\",
+        "outputPath": "F:\\project\\LordArima123\\C# project\\ConsoleApp1\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\phong\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
